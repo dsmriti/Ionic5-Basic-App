@@ -1,0 +1,30 @@
+<ion-content padding class="login-container">
+  <form #form="ngForm" (ngSubmit)="login(form)">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div class="logo-container">
+          <img class="logo" src="/assets/images/location.png">
+          <p class="move">MOVE</p>
+          </div>
+          <p class="login-heading">Welcome Aboard !</p>
+          <p class="login-text">Login to continue using Move</p>
+          <div padding class="inner-box">
+            <div class="input-container">
+              
+              <ion-input padding name="email" type="email" placeholder="Email" ngModel required>
+                <ion-icon name="mail-outline" class="login-icon"></ion-icon>
+              </ion-input>
+            </div>
+            <div class="input-container" style="margin-bottom: 10px;">
+              <ion-input padding name="password" type="password" placeholder="Password" ngModel required>
+                <ion-icon name="lock-closed-outline" class="login-icon"></ion-icon>
+              </ion-input>
+            </div>
+            <ion-button size="large" type="submit"  expand="block" (click)="loginUser()">Login</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
