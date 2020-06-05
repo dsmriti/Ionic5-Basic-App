@@ -1,5 +1,7 @@
 {
   "name": "Move",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

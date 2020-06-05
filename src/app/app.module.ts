@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AuthenticationService } from './services/authentication.service';
 import { AuthGuard } from './services/auth-guard.service';
+// import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { AuthGuard } from './services/auth-guard.service';
     SplashScreen,
     AuthGuard,
     AuthenticationService,
+    // Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
